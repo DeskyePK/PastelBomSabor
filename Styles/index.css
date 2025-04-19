@@ -157,12 +157,12 @@
     transform: translateY(0);
   }
 
-  /* Esconde os slides mobile por padrão */
+
 .slide-mobile {
     display: none;
   }
   
-  /* Mostra slides desktop normalmente */
+  
   .slide-desktop {
     display: block;
   }
@@ -313,7 +313,7 @@
 /* Estilos para o Pedido */
 
   .como-fazer-pedido {
-    background-color: #f5a623; /* amarelo vibrante */
+    background-color: #f5a623;
     padding: 60px 20px;
     color: #fff;
     text-align: center;
@@ -395,9 +395,6 @@
 /* FIM Estilos para o Pedido */
 
 
-
-  
-  /* No mobile, inverte: mostra os slides mobile, esconde os desktop */
   @media (max-width: 768px) {
     .slide-desktop {
       display: none;
@@ -497,9 +494,9 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.4s ease; /* Transição mais suave */
+    transition: transform 0.4s ease; 
   }
   
   .promo-card:hover img {
-    transform: scale(1.1); /* Zoom no conteúdo interno (imagem) */
+    transform: scale(1.1);
   }
