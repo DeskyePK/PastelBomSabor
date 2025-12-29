@@ -6,14 +6,12 @@
   <title>Pastel Bom Sabor</title>
   <link rel="stylesheet" href="Styles/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap');
-  
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
   </style>
 </head>
 <body>
@@ -264,6 +262,21 @@ function animarContadores() {
   const reservar = () => {
   window.open("https://wa.me/5581997201524?text=Ol%C3%A1%21+Gostaria+de+fazer+uma+reserva%2C+por+favor.+Pode+me+passar+as+op%C3%A7%C3%B5es+dispon%C3%ADveis%3F+%F0%9F%98%8A", "_blank");
 };
+
+
+
+  document.addEventListener('click', function (e) {
+    const clicavel = e.target.closest('a, button, input, textarea, select, label, .tabs');
+
+    if (!clicavel) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  });
+
+
 
   </script>
 </body>
