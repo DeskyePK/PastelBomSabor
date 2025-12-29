@@ -265,15 +265,14 @@ function animarContadores() {
 
 
 
-  document.addEventListener('click', function (e) {
-    const clicavel = e.target.closest('a, button, input, textarea, select, label, .tabs');
+  
+  const linkAnotaAi = "https://pedido.anota.ai/loja/pastel-bom-sabor-desativado?f=ms";
 
-    if (!clicavel) {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
+  document.querySelectorAll('.cardapio .item').forEach(item => {
+    item.style.cursor = "pointer";
+    item.addEventListener('click', () => {
+      window.open(linkAnotaAi, '_blank');
+    });
   });
 
 
